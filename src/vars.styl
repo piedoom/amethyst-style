@@ -1,0 +1,75 @@
+@import 'utility/mixins'
+
+/*---
+title: Colors
+---
+Variables having to do with colors and color implementations
+*/
+color = {
+    // Main accent colors
+    main: {
+        dark: #3e1b93,
+        medium: #4f29d0,
+        regular: #7f41ef,
+        light: #dfadff
+    },
+    // Alternate accent colors
+    alt: {
+        dark: #84286f,
+        medium: #a84a82,
+        regular: #f27ea2,
+        light: #ffa6a6
+    },
+    // Neutral colors for use on backgrounds
+    neutral: {
+        dark: #282631,
+        medium: #2e2a39,
+        regular: #ffffff,
+        light: #fafaff
+    },
+    // Colors associated with a meaning or result
+    status: {
+        error: #e56d94,
+        info: #2e2a39,
+        success: #89fb89,
+        warning: #ffeca0
+    },
+    // Colors for text
+    text: {
+        light: {
+            primary: rgba(40, 38, 49, 0.85),
+            secondary: rgba(40, 38, 49, 0.65)
+        }
+        dark: {
+            primary: rgba(255, 255, 255, 1),
+            secondary: rgba(255, 255, 255, 0.75)
+        }        
+    }
+}
+
+/*---
+title: Gradients
+---
+Using colors to create gradients
+*/
+gradient_main()
+    linear_gradient(color.main.regular, color.main.dark)
+gradient_alt()
+    linear_gradient(color.alt.regular, color.alt.medium)
+gradient_alt_light()
+    linear_gradient(color.alt.medium, color.alt.light)
+gradient_combo()
+    linear_gradient(color.alt.medium, color.main.regular)
+
+/*---
+title: Groups
+---
+Group elements that are commonly styled similarly
+*/
+group = {
+    headings: 'h1,h2,h3,h4,h5,h6',
+    body: {
+        primary: 'p,a,li',
+        secondary: 'small'
+    }
+}

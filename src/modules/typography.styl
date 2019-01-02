@@ -1,0 +1,63 @@
+@import '../vars'
+
+// --- Sizes --- //
+h1
+    font-size 2.4rem
+    line-height 1.2em
+h2
+    font-size 2.0rem
+    line-height 1.3em
+h3
+    font-size 1.5rem
+    line-height 1.2em
+h4
+    font-size 1.3rem
+    line-height 1.4em
+h5
+    font-size 1.2rem
+    line-height 1.5em
+h6
+    font-size 1.1rem
+    line-height 1.5em
+
+/// Used for multi-line headings.  Use `h2` as a subheader.
+hgroup > h2, span.subtitle
+        font-size 1.4rem
+        line-height 1.4em
+
+p
+    font-size 1.1rem
+
+small
+    font-size 0.9rem
+
+// --- Font Styles --- //
+{group.headings}
+    font-family 'Arvo', serif
+
+{group.body.primary}, {group.body.secondary}
+    font-family 'Karla', sans-serif
+    line-height 1.5em
+
+// --- Font Colors --- //
+html, .light-theme
+    {group.headings}, {group.body.primary}
+        color: color.text.light.primary
+
+    {group.body.secondary}
+        color: color.text.light.secondary
+
+    a
+        color: color.main.regular
+
+.dark-theme
+    background-color: color.neutral.dark
+
+    {group.headings + ',' + group.body.primary}
+        color: color.text.dark.primary
+
+    {group.body.secondary}
+        color: color.text.dark.secondary
+
+    a
+        color: color.main.light

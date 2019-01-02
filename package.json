@@ -1,0 +1,17 @@
+{
+  "name": "amethyst-style",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:piedoom/amethyst-style.git",
+  "author": "doomy <alexanderpaullozada@gmail.com>",
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "build": "parcel build src/amethyst-style.styl -d dist --no-source-maps --out-file amethyst-style.min.css",
+    "serve": "parcel serve examples/index.pug -d serve"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.8",
+    "pug": "^2.0.3",
+    "stylus": "^0.54.5"
+  }
+}
