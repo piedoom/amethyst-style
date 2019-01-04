@@ -6,12 +6,13 @@
   "author": "doomy <alexanderpaullozada@gmail.com>",
   "license": "BSD-3-Clause",
   "scripts": {
-    "build": "parcel build src/amethyst-style.styl -d dist --no-source-maps --out-file amethyst-style.min.css",
-    "serve": "parcel serve examples/index.pug -d serve"
+    "build": "parcel build src/css/main.styl -d dist --no-source-maps --out-file amethyst-style.min.css && parcel build src/js/main.ts -d dist --no-source-maps --out-file amethyst-style.min.js",
+    "serve": "parcel serve test/index.pug -d serve"
   },
   "devDependencies": {
     "cssnano": "^4.1.8",
     "pug": "^2.0.3",
-    "stylus": "^0.54.5"
+    "stylus": "^0.54.5",
+    "typescript": "^3.2.2"
   }
 }
